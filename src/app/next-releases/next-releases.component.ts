@@ -23,6 +23,14 @@ nextMovies:nextMovie[]=[
   genero:'Triller',
   sinopsis: 'Un padre y su hija adolescente asisten a un concierto de pop, donde se dan cuenta de que están en el centro de un evento oscuro y siniestro.',
   fechaEstreno: new Date('2024-08-02'),
+},
+{
+  id: 3,
+  imagen: './assets/img/ultimoConjuro.jpg',
+  nombre: 'El ultimo conjuto',
+  genero: 'Terror',
+  sinopsis: 'Devastado tras la muerte de su esposa, Naoto no encuentra consuelo. Su hijo, tratando de consolarse trae a casa un dedo de su madre fallecida. Este será solo el comienzo de una serie de eventos terroríficos.',
+  fechaEstreno: new Date('2024-07-30')
 }
 ]
 upCommingMovie: nextMovie[]=[];

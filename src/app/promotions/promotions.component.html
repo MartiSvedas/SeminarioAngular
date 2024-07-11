@@ -1,0 +1,23 @@
+<h3>{{title}}</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+
+        </tr>
+    </thead>
+<tbody>
+    @for(prom of Promotions; track prom.id){
+        <tr scope="row" > 
+            <td><img [src]="prom.imagen" ></td>
+            <td><h4>{{prom.nombre}}</h4>
+                <p>{{prom.fechaValidacion}}</p>
+                <p>{{prom.tipoBeneficio}}</p>
+            </td>
+        </tr>
+    }
+</tbody>
+</table>
+<app-footer></app-footer>

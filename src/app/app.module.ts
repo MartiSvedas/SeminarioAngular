@@ -10,6 +10,7 @@ import { InputQuantityComponent } from './input-quantity/input-quantity.componen
 import { CinemaHomeComponent } from './cinema-home/cinema-home.component';
 import { FooterComponent } from './footer/footer.component';
 import { NextReleasesComponent } from './next-releases/next-releases.component';
+import { PromotionsComponent } from './promotions/promotions.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NextReleasesComponent } from './next-releases/next-releases.component';
     InputQuantityComponent,
     CinemaHomeComponent,
     FooterComponent,
-    NextReleasesComponent
+    NextReleasesComponent,
+    PromotionsComponent
   ],
   imports: [
     BrowserModule,

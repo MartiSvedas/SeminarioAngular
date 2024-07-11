@@ -62,6 +62,8 @@ this.movieDataService.getMovies().subscribe(m=>this.movies=m)
 
 Comprar(movie: Movie) {
   alert("Se ha comprado las entradas exitosamente, verifique su correo electronico para ver el resumen de su compra ")
+  movie.asientos-=movie.compradas;
   movie.compradas+=movie.cantidad;
+  movie.cantidad=0;
   }
 };

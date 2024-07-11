@@ -1,0 +1,35 @@
+
+<div class="container">
+<h3>
+    <small class="text-body-secondary">{{title}}</small>
+</h3>
+<div class="Boxcontainer">
+    @for (movie of movies; track movie.id) {
+ <div class="card" style="width: 20rem;">
+     <img [src]="movie.imagen" class="card-img-top" alt="...">
+     <div class="card-body">
+       <h5 class="card-title">{{movie.nombre}}</h5>
+       <p class="card-text">{{movie.sinopsis}}</p>
+       <p class="card-text" id="fecha">{{movie.fecha| date:'fullDate' }}</p>
+    <div class="containerInput">
+    @if (movie.asientos>movie.compradas) {
+    <div>
+        <app-input-quantity [(cantidadEntradas)]="movie.cantidad" [(precioTotal)]="movie.precioTotal" [asientosDisponibles]="movie.asientos" ></app-input-quantity>
+        <button type="button" class="btn btn-outline-secondary" (click)="Comprar(movie)">Comprar</button>
+    </div>
+    <div class="detalles">
+        <p>Cantidad de entradas seleccionadas: {{movie.cantidad}}</p>
+        <p class="precio">Precio total: {{movie.precioTotal| currency}}</p>
+    </div>
+    }
+    @else {
+        <p class="agotado">Entradas agotadas</p>
+    }
+    </div>
+    </div>
+</div>
+}
+@empty {
+    <h1 class="display-4">No hay peliculas disponibles en cartelera</h1>
+}
+</div>

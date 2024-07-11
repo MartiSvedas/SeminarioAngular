@@ -1,0 +1,27 @@
+.navbar-brand{
+    margin-left: 10%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    color: bisque;
+}
+.navbar-brand:hover{
+    color: white;
+}
+.navbar{
+    background-color: rgb(49, 44, 44);
+}
+
+.navbar ul{
+    margin-right: 28%;
+}
+
+.navbar ul li a{
+    color: rgb(223, 223, 159);
+    font-size: 105%;
+}
+
+.navbar ul li a:hover{
+    color:white;
+    font-size: 110%;
+
+}

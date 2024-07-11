@@ -1,0 +1,25 @@
+<h3>{{title}}</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+
+        </tr>
+    </thead>
+<tbody>
+    @for(next of upCommingMovie; track next.id){
+        <tr scope="row"> 
+            <td><img [src]="next.imagen" ></td>
+            <td><h4>{{next.nombre}}</h4>
+                <p>{{next.sinopsis}}</p>
+                <p>Genero: {{next.genero}}</p>
+                <p>Fecha de estreno:  {{ next.fechaEstreno| date:'fullDate' }}</p>
+            </td>
+        </tr>
+    }
+</tbody>
+</table>
+<app-footer></app-footer>
+  

@@ -1,0 +1,9 @@
+<p>Elija la cantidad de entradas que quiere comprar:</p> 
+<div class="container">
+<button type="button" class="btn btn-outline-primary" (click)="downQuantity()" (click)="changePrice()">-</button>
+        <input type="text" 
+          [(ngModel)]="cantidadEntradas"
+          (keyup)="onChangeQuantity($event)"
+          (keyup)="onChangePrice($event)">
+<button type="button" class="btn btn-outline-primary" (click)="upQuantity()" (click)="changePrice()" >+</button>
+</div>

@@ -1,0 +1,64 @@
+.Boxcontainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+} 
+
+.container{
+    margin-top: 2%;
+}
+h3{
+    margin-bottom: 1%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(49, 44, 44);
+}
+h5{
+    font-weight: bold;
+    text-align: center;
+
+}
+p.agotado{
+    background-color: rgb(163, 162, 162);
+    border-radius: 15px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+p#fecha{
+    font-weight: lighter;
+}
+button{
+    margin-left: 11px;
+}
+
+.containerInput{
+    display: flex;
+    justify-content: center;
+    border-top: 0.5px solid black;;
+    padding: 10px;
+}
+.detalles{
+    margin-top: 60px;
+    background-color: rgb(250, 201, 201);
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+p.precio{
+    margin-top: -20px;
+}
+.detalles p{
+font-size: 90%;
+font-weight: lighter;
+padding: 10px;
+
+
+}
+img{
+    width: 200px;
+  margin-left: 55px;
+}
+
+

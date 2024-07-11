@@ -3,5 +3,6 @@ export interface promotion{
     imagen: string,
     nombre: string,
     tipoBeneficio:string,
-    fechaValidacion:string
+    fechaValidacionDesde:Date,
+    fechaValidacionHasta:Date,
 }

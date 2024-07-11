@@ -9,11 +9,11 @@
         </tr>
     </thead>
 <tbody>
-    @for(prom of Promotions; track prom.id){
+    @for(prom of PromocionesVigentes; track prom.id){
         <tr scope="row" > 
             <td><img [src]="prom.imagen" ></td>
             <td><h4>{{prom.nombre}}</h4>
-                <p>{{prom.fechaValidacion}}</p>
+                <p>{{prom.fechaValidacionDesde |  date:' MMMM d, y'}} hasta {{prom.fechaValidacionHasta |  date:' MMMM d, y'}}</p>
                 <p>{{prom.tipoBeneficio}}</p>
             </td>
         </tr>

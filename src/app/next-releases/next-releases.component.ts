@@ -27,7 +27,7 @@ nextMovies:nextMovie[]=[
 {
   id: 3,
   imagen: './assets/img/ultimoConjuro.jpg',
-  nombre: 'El ultimo conjuto',
+  nombre: 'El ultimo conjuro',
   genero: 'Terror',
   sinopsis: 'Devastado tras la muerte de su esposa, Naoto no encuentra consuelo. Su hijo, tratando de consolarse trae a casa un dedo de su madre fallecida. Este será solo el comienzo de una serie de eventos terroríficos.',
   fechaEstreno: new Date('2024-07-30')
